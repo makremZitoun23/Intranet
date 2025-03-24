@@ -40,6 +40,6 @@ class Document(models.Model):
     contenuFichier = models.FileField(upload_to="documents/")
     notes = models.ManyToManyField(Note, related_name="documents", blank=True)
 
-    def __str__(self):
-        return self.titre
+    #def __str__(self):
+     #   return self.titre
 
